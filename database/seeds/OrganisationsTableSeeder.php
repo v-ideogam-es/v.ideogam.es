@@ -13,16 +13,6 @@ class OrganisationsTableSeeder extends Seeder
      */
     public function run()
     {
-        $organisations = self::data();
-
-        foreach ($organisations as $organisation) {
-            $properties = [];
-
-            foreach ($organisation as $property => $value) {
-                $properties[$property] = $value;
-            }
-
-            DB::table(self::table())->insert($properties);
-        }
+        self::seed();
     }
 }

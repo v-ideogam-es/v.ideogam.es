@@ -2,6 +2,8 @@
 
 namespace App\Utilities;
 
+use Carbon\Carbon;
+use DB;
 use Stringy\Stringy;
 
 trait Seedable
@@ -12,6 +14,25 @@ trait Seedable
     protected static function data()
     {
         return Yaml::parseFile(database_path() . '/seeds/data/' . self::table() . '.yaml');
+    }
+
+    /**
+     * @return void
+     */
+    protected static function seed()
+    {
+        $seeds = self::data();
+
+        foreach ($seeds as $seed) {
+            $properties = [];
+            $properties['created_at'] = Carbon::now();
+
+            foreach ($seed as $property => $value) {
+                $properties[$property] = $value;
+            }
+
+            DB::table(self::table())->insert($properties);
+        }
     }
 
     /**

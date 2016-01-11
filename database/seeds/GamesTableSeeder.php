@@ -13,16 +13,6 @@ class GamesTableSeeder extends Seeder
      */
     public function run()
     {
-        $games = self::data();
-
-        foreach ($games as $game) {
-            $properties = [];
-
-            foreach ($game as $property => $value) {
-                $properties[$property] = $value;
-            }
-
-            DB::table(self::table())->insert($properties);
-        }
+        self::seed();
     }
 }
