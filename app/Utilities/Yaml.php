@@ -14,7 +14,7 @@ class Yaml extends SymfonyYaml
     public static function parseFile($filename)
     {
         if (!file_exists($filename) || !is_readable($filename)) {
-            throw new RuntimeException('YAML file is inaccessible.');
+            throw new RuntimeException('YAML file `{$filename}` is inaccessible.');
         }
 
         return self::parse(file_get_contents($filename));
