@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class OrganisationsTableSeeder extends Seeder
+class OrganizationsTableSeeder extends Seeder
 {
     use App\Utilities\Seedable;
 

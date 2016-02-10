@@ -28,5 +28,5 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
     Route::resource('games', 'GameController');
-    Route::resource('organisations', 'OrganisationController');
+    Route::resource('organizations', 'OrganizationController');
 });

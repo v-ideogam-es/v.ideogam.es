@@ -18,7 +18,7 @@ class CreateGamesTable extends Migration
             $table->text('description')->nullable();
             $table->string('url')->nullable();
             $table->integer('publisher_id')->unsigned();
-            $table->foreign('publisher_id')->references('id')->on('organisations');
+            $table->foreign('publisher_id')->references('id')->on('organizations');
             $table->timestamps();
         });
     }

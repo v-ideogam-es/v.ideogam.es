@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Organisation;
+use App\Organization;
 
-class OrganisationController extends Controller
+class OrganizationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,7 @@ class OrganisationController extends Controller
      */
     public function index()
     {
-        $organisations = Organisation::all();
+        $organisations = Organization::all();
 
         return view('organisations.index', compact('organisations'));
     }
