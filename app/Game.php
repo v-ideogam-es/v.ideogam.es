@@ -18,5 +18,13 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Game extends Model
 {
-    //
+    /**
+     * An Entity can have a kind
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function publisher()
+    {
+        return $this->hasOne('App\Organization', 'id', 'publisher_id');
+    }
 }
