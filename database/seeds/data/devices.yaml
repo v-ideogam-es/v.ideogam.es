@@ -1,0 +1,12 @@
+---
+- name:            Genesis 1
+  organization_id: 2 # Sega
+  platform_id:     1
+
+- name:            Genesis 2
+  organization_id: 2 # Sega
+  platform_id:     1
+
+- name:            Genesis 3
+  organization_id: 2 # Sega
+  platform_id:     1

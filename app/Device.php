@@ -19,5 +19,11 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Device extends Model
 {
-    //
+    /**
+     * @return Organization
+     */
+    public function organization()
+    {
+        return $this->hasOne('App\Organization', 'id', 'organization_id')->first();
+    }
 }

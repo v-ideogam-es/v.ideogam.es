@@ -27,6 +27,7 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
+    Route::resource('devices', 'DeviceController');
     Route::resource('games', 'GameController');
     Route::resource('organizations', 'OrganizationController');
     Route::resource('platforms', 'PlatformController');
