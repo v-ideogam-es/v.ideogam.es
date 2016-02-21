@@ -1,12 +1,25 @@
 ---
 - name:            Genesis 1
+  nickname:        ~
   organization_id: 2 # Sega
-  platform_id:     1
+  platform_id:     1 # Genesis
 
 - name:            Genesis 2
+  nickname:        ~
   organization_id: 2 # Sega
-  platform_id:     1
+  platform_id:     1 # Genesis
 
 - name:            Genesis 3
+  nickname:        ~
   organization_id: 2 # Sega
-  platform_id:     1
+  platform_id:     1 # Genesis
+
+- name:            Nintendo Entertainment System 1
+  nickname:        NES 1
+  organization_id: 1 # Nintendo
+  platform_id:     2 # NES
+
+- name:            Nintendo Entertainment System 2
+  nickname:        NES 2 (Top-Loader)
+  organization_id: 1 # Nintendo
+  platform_id:     2 # NES

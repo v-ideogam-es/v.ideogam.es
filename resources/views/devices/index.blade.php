@@ -1,5 +1,7 @@
+<ul>
 @forelse ($devices as $device)
-    {{ $device->organization()->nickname or $device->organization()->name }} {{ $device->name }}<br>
+    <li>{{ $device->organization()->nickname or $device->organization()->name }} - {{ $device->nickname or $device->name }}
 @empty
-    No Devices
+    <li>No Devices
 @endforelse
+</ul>
