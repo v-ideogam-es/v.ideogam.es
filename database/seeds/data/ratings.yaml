@@ -1,0 +1,8 @@
+---
+- name:         KA
+  description:  Kids to Adults
+  publisher_id: 3 # VRC
+
+- name:         GA
+  description:  General Audiences
+  publisher_id: 3 # VRC
