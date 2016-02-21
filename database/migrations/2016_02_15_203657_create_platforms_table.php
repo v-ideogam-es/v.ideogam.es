@@ -16,10 +16,11 @@ class CreatePlatformsTable extends Migration
             $table->increments('id');
             $table->string('name')->unique();
             $table->string('nickname')->nullable();
-            $table->string('brand')->nullable();
             $table->text('description')->nullable();
             $table->string('photo')->nullable();
             $table->string('url')->nullable();
+            $table->integer('organization_id')->unsigned();
+            $table->foreign('organization_id')->references('id')->on('organizations');
             $table->timestamps();
         });
     }
