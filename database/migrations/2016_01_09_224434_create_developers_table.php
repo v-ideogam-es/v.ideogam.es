@@ -14,8 +14,8 @@ class CreateDevelopersTable extends Migration
     {
         Schema::create('developers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('url');
+            $table->string('name')->index();
+            $table->string('url')->nullable();
             $table->timestamps();
         });
     }
