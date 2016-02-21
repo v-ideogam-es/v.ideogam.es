@@ -1,1 +1,1 @@
-{{ dump($games) }}
+@each ('partials.game', $games, 'game')
