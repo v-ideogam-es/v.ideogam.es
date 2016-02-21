@@ -1,2 +1,3 @@
-- name:            Genesis
+- id:              1
+  name:            Genesis
   organization_id: 2 # Sega
