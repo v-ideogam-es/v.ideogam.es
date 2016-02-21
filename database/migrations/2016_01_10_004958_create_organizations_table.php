@@ -14,7 +14,8 @@ class CreateOrganizationsTable extends Migration
     {
         Schema::create('organizations', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name')->unique();
+            $table->string('nickname')->nullable();
             $table->string('url')->nullable();
             $table->timestamps();
         });
@@ -27,6 +28,6 @@ class CreateOrganizationsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('organisations');
+        Schema::drop('organizations');
     }
 }

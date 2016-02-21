@@ -1,1 +1,1 @@
-{{ dump($organisations) }}
+{{ dump($organizations) }}

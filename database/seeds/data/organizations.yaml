@@ -1,4 +1,20 @@
 ---
-- id:   1
-  name: Nintendo
-  url:  nintendo.com
+- id:       1
+  name:     Nintendo Co., Ltd.
+  nickname: Nintendo
+  url:      http://www.nintendo.com
+
+- id:       2
+  name:     Sega Games Co., Ltd.
+  nickname: SEGA
+  url:      http://www.sega.com
+
+- id:       3
+  name:     Videogame Rating Council
+  nickname: VRC
+  url:      ~
+
+- id:       4
+  name:     Entertainment Software Rating Board
+  nickname: ESRB
+  url:      http://esrb.org
