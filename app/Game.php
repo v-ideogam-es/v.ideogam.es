@@ -17,6 +17,15 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Carbon\Carbon $updated_at
  * @property integer $publisher_id
  * @property string $photo
+ * @method static \Illuminate\Database\Query\Builder|\App\Game whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Game whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Game whereDescription($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Game wherePhoto($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Game whereUrl($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Game wherePublisherId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Game whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Game whereUpdatedAt($value)
+ * @mixin \Eloquent
  */
 class Game extends Model
 {

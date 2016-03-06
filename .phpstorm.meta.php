@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2016-02-21.
+    * Generated on 2016-03-06.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -100,6 +100,8 @@ namespace PHPSTORM_META {
             'command.queue.forget' instanceof \Illuminate\Queue\Console\ForgetFailedCommand,
             'command.queue.flush' instanceof \Illuminate\Queue\Console\FlushFailedCommand,
             'hash' instanceof \Illuminate\Hashing\BcryptHasher,
+            'swift.transport' instanceof \Illuminate\Mail\TransportManager,
+            'swift.mailer' instanceof \Swift_Mailer,
             'mailer' instanceof \Illuminate\Mail\Mailer,
             'Illuminate\Contracts\Pipeline\Hub' instanceof \Illuminate\Pipeline\Hub,
             'queue' instanceof \Illuminate\Queue\QueueManager,
@@ -212,6 +214,8 @@ namespace PHPSTORM_META {
             'command.queue.forget' instanceof \Illuminate\Queue\Console\ForgetFailedCommand,
             'command.queue.flush' instanceof \Illuminate\Queue\Console\FlushFailedCommand,
             'hash' instanceof \Illuminate\Hashing\BcryptHasher,
+            'swift.transport' instanceof \Illuminate\Mail\TransportManager,
+            'swift.mailer' instanceof \Swift_Mailer,
             'mailer' instanceof \Illuminate\Mail\Mailer,
             'Illuminate\Contracts\Pipeline\Hub' instanceof \Illuminate\Pipeline\Hub,
             'queue' instanceof \Illuminate\Queue\QueueManager,
@@ -324,6 +328,8 @@ namespace PHPSTORM_META {
             'command.queue.forget' instanceof \Illuminate\Queue\Console\ForgetFailedCommand,
             'command.queue.flush' instanceof \Illuminate\Queue\Console\FlushFailedCommand,
             'hash' instanceof \Illuminate\Hashing\BcryptHasher,
+            'swift.transport' instanceof \Illuminate\Mail\TransportManager,
+            'swift.mailer' instanceof \Swift_Mailer,
             'mailer' instanceof \Illuminate\Mail\Mailer,
             'Illuminate\Contracts\Pipeline\Hub' instanceof \Illuminate\Pipeline\Hub,
             'queue' instanceof \Illuminate\Queue\QueueManager,
@@ -436,6 +442,8 @@ namespace PHPSTORM_META {
             'command.queue.forget' instanceof \Illuminate\Queue\Console\ForgetFailedCommand,
             'command.queue.flush' instanceof \Illuminate\Queue\Console\FlushFailedCommand,
             'hash' instanceof \Illuminate\Hashing\BcryptHasher,
+            'swift.transport' instanceof \Illuminate\Mail\TransportManager,
+            'swift.mailer' instanceof \Swift_Mailer,
             'mailer' instanceof \Illuminate\Mail\Mailer,
             'Illuminate\Contracts\Pipeline\Hub' instanceof \Illuminate\Pipeline\Hub,
             'queue' instanceof \Illuminate\Queue\QueueManager,
