@@ -14,6 +14,11 @@ class CreateReleasesTable extends Migration
     {
         Schema::create('releases', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('game_id')->unsigned();
+            $table->foreign('game_id')->references('id')->on('games');
+            $table->integer('platform_id')->unsigned();
+            $table->foreign('platform_id')->references('id')->on('platforms');
+            $table->date('release_date')->nullable();
             $table->string('upc_a')->nullable();
             $table->timestamps();
         });
