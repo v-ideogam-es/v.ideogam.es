@@ -4,7 +4,9 @@ namespace App\Utilities;
 
 use Carbon\Carbon;
 use DB;
+use RadHam\Yaml;
 use Stringy\Stringy;
+
 
 trait Seedable
 {
@@ -40,7 +42,8 @@ trait Seedable
      */
     protected static function table()
     {
-        return Stringy::create(__CLASS__)->replace('TableSeeder', '')
+        return Stringy::create(__CLASS__)
+            ->replace('TableSeeder', '')
             ->underscored()
             ->toLowerCase();
     }

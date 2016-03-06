@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9dcdcc67ab41951bd1012f560c695612",
-    "content-hash": "dbafe1820e82a7700334013f75df9224",
+    "hash": "a2b525258629f66a0673863cb1a7b37d",
+    "content-hash": "8411af3c56c32d51141a004729a851a1",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -1804,6 +1804,51 @@
                 "shell"
             ],
             "time": "2016-02-27 18:59:18"
+        },
+        {
+            "name": "radioactivehamster/yaml",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/radioactivehamster/yaml.git",
+                "reference": "14f9a7ddaf70c7e50c82977575b3f46a2339548a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/radioactivehamster/yaml/zipball/14f9a7ddaf70c7e50c82977575b3f46a2339548a",
+                "reference": "14f9a7ddaf70c7e50c82977575b3f46a2339548a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.5|~7.0",
+                "symfony/yaml": "^3.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.11",
+                "phpspec/phpspec": "^2.4",
+                "symfony/var-dumper": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RadHam\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Benner",
+                    "email": "james.benner@gmail.com",
+                    "homepage": "http://www.jamesbenner.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An extended variant of the Symfony PHP YAML library.",
+            "homepage": "https://github.com/radioactivehamster/yaml",
+            "time": "2016-02-24 23:17:04"
         },
         {
             "name": "semantic/ui",
