@@ -12,6 +12,12 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $url
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
+ * @method static \Illuminate\Database\Query\Builder|\App\Developer whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Developer whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Developer whereUrl($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Developer whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Developer whereUpdatedAt($value)
+ * @mixin \Eloquent
  */
 class Developer extends Model
 {

@@ -16,6 +16,18 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $platform_id
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
+ * @property string $nickname
+ * @method static \Illuminate\Database\Query\Builder|\App\Device whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Device whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Device whereNickname($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Device whereDescription($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Device wherePrice($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Device whereUpcA($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Device whereOrganizationId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Device wherePlatformId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Device whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Device whereUpdatedAt($value)
+ * @mixin \Eloquent
  */
 class Device extends Model
 {
