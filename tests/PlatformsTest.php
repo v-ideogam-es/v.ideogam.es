@@ -14,6 +14,7 @@ class PlatformsTest extends TestCase
     public function testPlatformsIndex()
     {
         $this->visit('/platforms')
+             ->see('Genesis')
              ->see('NES');
     }
 }

@@ -14,6 +14,7 @@ class GamesTest extends TestCase
     public function testGamesIndex()
     {
         $this->visit('/games')
+             ->see('Sonic')
              ->see('Super Mario Bros.');
     }
 }
