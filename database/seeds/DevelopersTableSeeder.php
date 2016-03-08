@@ -4,6 +4,8 @@ use Illuminate\Database\Seeder;
 
 class DevelopersTableSeeder extends Seeder
 {
+    use App\Utilities\Seedable;
+
     /**
      * Run the database seeds.
      *
@@ -11,6 +13,6 @@ class DevelopersTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        self::seed();
     }
 }
