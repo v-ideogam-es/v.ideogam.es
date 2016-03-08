@@ -18,8 +18,8 @@ class CreateGamesTable extends Migration
             $table->text('description')->nullable();
             $table->string('photo')->nullable();
             $table->string('url')->nullable();
-            $table->integer('publisher_id')->unsigned();
-            $table->foreign('publisher_id')->references('id')->on('organizations');
+            $table->integer('developer_id')->unsigned();
+            $table->foreign('developer_id')->references('id')->on('developers');
             $table->timestamps();
         });
     }
