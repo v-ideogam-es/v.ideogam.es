@@ -17,4 +17,17 @@ class GamesTest extends TestCase
              ->see('Sonic')
              ->see('Super Mario Bros.');
     }
+
+    /**
+     * A basic test example.
+     *
+     * @return void
+     */
+    public function testGamesCreate()
+    {
+        $this->visit('/games/create')
+             ->see('Name')
+             ->see('Description')
+             ->see('Developer');
+    }
 }

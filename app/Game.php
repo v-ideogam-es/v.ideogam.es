@@ -41,10 +41,10 @@ class Game extends Model
     #}
 
     /**
-     * @return Publisher
+     * @return Developer
      */
-    public function publisher()
+    public function developer()
     {
-        return $this->hasOne('App\Organization', 'id', 'publisher_id')->first();
+        return $this->hasOne('App\Developer', 'id', 'developer_id')->first();
     }
 }
