@@ -2,36 +2,36 @@
 - name:         Super Mario Bros.
   description:  Do you have what it takes to save the Mushroom Princess?
   url:          ~
-  developer_id: 1 # Nintendo EAD
+  developer_id: 5 # Nintendo EAD
   # rating:     E.S.R.B. (Entertainment Software Rating Board): E — Everyone
 
 - name:         Super Mario Bros. 2
   description:  Mario's back! Bigger and badder than ever before!
   url:          ~
-  developer_id: 1 # Nintendo EAD
+  developer_id: 5 # Nintendo EAD
   # rating:     E.S.R.B. (Entertainment Software Rating Board): E — Everyone
 
 - name:         Super Mario Bros. 3
   description:  New, different worlds! New, exciting levels! New challenges galore!
   url:          ~
-  developer_id: 1 # Nintendo EAD
+  developer_id: 5 # Nintendo EAD
   # rating:     E.S.R.B. (Entertainment Software Rating Board): E — Everyone
 
 - name:         Sonic the Hedgehog
   description:  It's super SONIC
   url:          ~
-  developer_id: 2 # Sonic Team
+  developer_id: 6 # Sonic Team
   # rating:     V.R.C. (Videogame Rating Council): KA — Kids to Adults
 
 - name:         Sonic the Hedgehog 2
   description:  Sonic and Tails TEAM UP!
   url:          ~
-  developer_id: 2 # Sonic Team
+  developer_id: 6 # Sonic Team
 
 - name:         Sonic the Hedgehog 3
   description:  New Attitude! New Enemies!
   url:          ~
-  developer_id: 2 # Sonic Team
+  developer_id: 6 # Sonic Team
   # rating:     V.R.C. (Videogame Rating Council): GA — General Audiences
 
 - name:         Sonic CD
@@ -39,5 +39,5 @@
                   In his first CD adventure, Sonic goes head to head with The
                   Metal Sonic, Dr. Robotnik's evil Hedgehog creation!
   url:          ~
-  developer_id: 2 # Sonic Team
+  developer_id: 6 # Sonic Team
   # rating:     V.R.C. (Videogame Rating Council): GA — General Audiences

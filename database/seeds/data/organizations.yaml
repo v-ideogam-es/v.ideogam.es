@@ -18,3 +18,18 @@
   name:     Entertainment Software Rating Board
   nickname: ESRB
   url:      http://esrb.org
+
+- id:       5
+  name:     Nintendo Entertainment Analysis & Development
+  nickname: Nintendo EAD
+  url:      ~
+
+- id:       6
+  name:     Sonic Team
+  nickname: ~
+  url:      ~
+
+- id:       7
+  name:     Double Fine Productions, Inc.
+  nickname: Double Fine
+  url:      ~

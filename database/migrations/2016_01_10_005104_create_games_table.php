@@ -19,7 +19,7 @@ class CreateGamesTable extends Migration
             $table->string('photo')->nullable();
             $table->string('url')->nullable();
             $table->integer('developer_id')->unsigned();
-            $table->foreign('developer_id')->references('id')->on('developers');
+            $table->foreign('developer_id')->references('id')->on('organizations');
             $table->timestamps();
         });
     }
