@@ -3,7 +3,7 @@
     @if ($game->description)
         <p class="p-description">{{ $game->description }}</p>
     @endif
-    <a href="{{ $game->developer()->url or '#' }}" class="p-brand h-card">
-        {{ $game->developer()->nickname or $game->developer()->name }}
+    <a href="{{ $game->developer->url or '#' }}" class="p-brand h-card">
+        {{ $game->developer->nickname or $game->developer->name }}
     </a>
 </article>
