@@ -2,10 +2,11 @@
 
 namespace App;
 
+use App\Game;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * App\Organisation
+ * App\Organization
  *
  * @property integer $id
  * @property string $name
@@ -23,5 +24,14 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Organization extends Model
 {
-    //
+    /**
+     * Scope a query to only include developers.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeDeveloper($query)
+    {
+        $query->whereIn('id', Game::all()->keyBy('developer_id')->keys());
+    }
 }
