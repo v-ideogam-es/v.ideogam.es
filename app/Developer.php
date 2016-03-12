@@ -18,6 +18,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\App\Developer whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Developer whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property string $nickname
+ * @method static \Illuminate\Database\Query\Builder|\App\Developer whereNickname($value)
  */
 class Developer extends Model
 {

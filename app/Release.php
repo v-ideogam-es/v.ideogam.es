@@ -16,6 +16,12 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\App\Release whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Release whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property integer $game_id
+ * @property integer $platform_id
+ * @property string $release_date
+ * @method static \Illuminate\Database\Query\Builder|\App\Release whereGameId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Release wherePlatformId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Release whereReleaseDate($value)
  */
 class Release extends Model
 {
