@@ -32,6 +32,11 @@ class Organization extends Model
      */
     public function scopeDeveloper(Builder $query)
     {
-        $query->whereIn('id', Game::all()->keyBy('developer_id')->keys()->unique());
+        $developerIds = Game::all()
+                            ->keyBy('developer_id')
+                            ->keys()
+                            ->unique();
+
+        $query->whereIn('id', $developerIds);
     }
 }
