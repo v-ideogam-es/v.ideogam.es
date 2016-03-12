@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Developer;
+use App\Organization;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 use App\Game;
@@ -10,6 +13,13 @@ use App\Http\Controllers\Controller;
 
 class GameController extends Controller
 {
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['description', 'name', 'photo', 'url', 'publisher_id', 'created_at', 'updated_at'];
+
     /**
      * Display a listing of the resource.
      *
@@ -29,7 +39,9 @@ class GameController extends Controller
      */
     public function create()
     {
-        //
+        $developers = Organization::developer()->orderBy('name', 'asc')->get();
+
+        return view('games.create', compact('developers'));
     }
 
     /**
@@ -40,7 +52,13 @@ class GameController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $game = new Game;
+        $game->name         = $request->name;
+        $game->description  = $request->description;
+        $game->developer_id = $request->developer_id;
+        $game->created_at   = Carbon::now();
+        $game->updated_at   = null;
+        $game->save();
     }
 
     /**
