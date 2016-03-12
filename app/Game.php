@@ -26,6 +26,9 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\App\Game whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Game whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property integer $developer_id
+ * @property-read \App\Organization $developer
+ * @method static \Illuminate\Database\Query\Builder|\App\Game whereDeveloperId($value)
  */
 class Game extends Model
 {
@@ -45,6 +48,6 @@ class Game extends Model
      */
     public function developer()
     {
-        return $this->hasOne('App\Developer', 'id', 'developer_id')->first();
+        return $this->hasOne('App\Organization', 'id', 'developer_id');
     }
 }

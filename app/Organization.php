@@ -2,7 +2,7 @@
 
 namespace App;
 
-use App\Game;
+use \Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -27,11 +27,11 @@ class Organization extends Model
     /**
      * Scope a query to only include developers.
      *
-     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param  \Illuminate\Database\Eloquent\Builder $query
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeDeveloper($query)
+    public function scopeDeveloper(Builder $query)
     {
-        $query->whereIn('id', Game::all()->keyBy('developer_id')->keys());
+        $query->whereIn('id', Game::all()->keyBy('developer_id')->keys()->unique());
     }
 }
