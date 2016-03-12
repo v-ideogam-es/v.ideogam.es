@@ -7,5 +7,3 @@
         {{ $game->developer->nickname or $game->developer->name }}
     </a>
 </article>
-
-{{ dump(App\Organization::developer()->get())  }}
