@@ -18,6 +18,18 @@
 
         <div class="field">
             <label>
+                Photo: <input name="photo" type="text">
+            </label>
+        </div>
+
+        <div class="field">
+            <label>
+                URL: <input name="url" type="text">
+            </label>
+        </div>
+
+        <div class="field">
+            <label>
                 Developer:
                 <select name="developer_id">
                     @foreach($developers as $developer)
