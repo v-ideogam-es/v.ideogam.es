@@ -37,18 +37,37 @@ class Scaffold extends Command
      */
     public function handle()
     {
+        $this->makeModel();
+        $this->makeView();
+        $this->makeController();
+    }
+
+    protected function makeController()
+    {
         $resource   = $this->argument('resource');
         $singular   = str_singular($resource);
         $controller = ucfirst($singular) . 'Controller';
-        $model      = ucfirst($singular);
 
-        $this->call('make:controller', ['--resource' => true, 'name' => $controller]);
-        $this->call('make:model', ['--migration' => true, 'name' => $model]);
+        return $this->call('make:controller', ['--resource' => true, 'name' => $controller]);
+    }
+
+    protected function makeModel()
+    {
+        $resource = $this->argument('resource');
+        $singular = str_singular($resource);
+        $model    = ucfirst($singular);
+
+        return $this->call('make:model', ['--migration' => true, 'name' => $model]);
+    }
+
+    protected function makeView()
+    {
+        $resource = $this->argument('resource');
 
         if (!is_dir(base_path('/resources/views/') . $resource)) {
             mkdir(base_path('/resources/views/') . $resource);
         }
 
-        touch(base_path('/resources/views/') . $resource . '/index.blade.php');
+        return touch(base_path('/resources/views/') . $resource . '/index.blade.php');
     }
 }
