@@ -15,7 +15,7 @@
   platform_id:     1 # Genesis
 
 - name:            Nintendo Entertainment System 1
-  nickname:        NES 1
+  nickname:        NES
   organization_id: 1 # Nintendo
   platform_id:     2 # NES
 

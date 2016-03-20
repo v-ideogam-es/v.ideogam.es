@@ -21,6 +21,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\App\Organization whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Organization whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @method static \Illuminate\Database\Query\Builder|\App\Organization developer()
  */
 class Organization extends Model
 {

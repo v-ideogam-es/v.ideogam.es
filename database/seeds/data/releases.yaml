@@ -1,0 +1,4 @@
+---
+- game_id:      1 # Super Mario Bros.
+  platform_id:  2 # NES
+  release_date: 19851018 # Largely debated; but this is Nintendo's official stated date.

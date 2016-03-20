@@ -22,6 +22,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\App\Release whereGameId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Release wherePlatformId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Release whereReleaseDate($value)
+ * @property integer $rating_id
+ * @method static \Illuminate\Database\Query\Builder|\App\Release whereRatingId($value)
  */
 class Release extends Model
 {

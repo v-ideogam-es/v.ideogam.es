@@ -18,6 +18,8 @@ class CreateReleasesTable extends Migration
             $table->foreign('game_id')->references('id')->on('games');
             $table->integer('platform_id')->unsigned();
             $table->foreign('platform_id')->references('id')->on('platforms');
+            $table->integer('rating_id')->unsigned()->nullable();
+            $table->foreign('rating_id')->references('id')->on('ratings');
             $table->date('release_date')->nullable();
             $table->string('upc_a')->nullable();
             $table->timestamps();

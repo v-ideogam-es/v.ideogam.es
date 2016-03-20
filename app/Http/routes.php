@@ -31,4 +31,5 @@ Route::group(['middleware' => ['web']], function () {
     Route::resource('games', 'GameController');
     Route::resource('organizations', 'OrganizationController');
     Route::resource('platforms', 'PlatformController');
+    Route::resource('releases', 'ReleaseController');
 });
