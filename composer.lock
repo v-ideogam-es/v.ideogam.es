@@ -180,16 +180,16 @@
         },
         {
             "name": "danielstjules/stringy",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielstjules/Stringy.git",
-                "reference": "5554477962a430cc5c79737ffa0fe3cb07f50d66"
+                "reference": "bd90918858ae079e34192710946449ed6c0bf795"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/5554477962a430cc5c79737ffa0fe3cb07f50d66",
-                "reference": "5554477962a430cc5c79737ffa0fe3cb07f50d66",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/bd90918858ae079e34192710946449ed6c0bf795",
+                "reference": "bd90918858ae079e34192710946449ed6c0bf795",
                 "shasum": ""
             },
             "require": {
@@ -232,7 +232,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2016-03-20 00:33:13"
+            "time": "2016-03-21 20:26:21"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3329,16 +3329,16 @@
         },
         {
             "name": "phpspec/phpspec",
-            "version": "2.4.1",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/phpspec.git",
-                "reference": "5528ce1e93a1efa090c9404aba3395c329b4e6ed"
+                "reference": "385ecb015e97c13818074f1517928b24d4a26067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/5528ce1e93a1efa090c9404aba3395c329b4e6ed",
-                "reference": "5528ce1e93a1efa090c9404aba3395c329b4e6ed",
+                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/385ecb015e97c13818074f1517928b24d4a26067",
+                "reference": "385ecb015e97c13818074f1517928b24d4a26067",
                 "shasum": ""
             },
             "require": {
@@ -3403,7 +3403,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2016-01-01 10:17:54"
+            "time": "2016-03-20 20:34:32"
         },
         {
             "name": "phpspec/prophecy",

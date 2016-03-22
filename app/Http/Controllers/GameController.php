@@ -52,7 +52,7 @@ class GameController extends Controller
      */
     public function store(Request $request)
     {
-        $game = new Game;
+        $game               = new Game;
         $game->name         = $request->name;
         $game->description  = $request->description;
         $game->developer_id = $request->developer_id;

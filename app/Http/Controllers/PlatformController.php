@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Organization;
 use App\Platform;
 use Illuminate\Http\Request;
 
@@ -28,7 +29,9 @@ class PlatformController extends Controller
      */
     public function create()
     {
-        //
+        $organizations = Organization::all()->sortBy('name');
+
+        return view('platforms.create', compact('organizations'));
     }
 
     /**
@@ -39,7 +42,14 @@ class PlatformController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $platform                  = new Platform;
+        $platform->name            = $request->name;
+        $platform->nickname        = $request->nickname;
+        $platform->description     = $request->description;
+        $platform->photo           = $request->photo;
+        $platform->url             = $request->url;
+        $platform->organization_id = $request->organization_id;
+        $platform->save();
     }
 
     /**

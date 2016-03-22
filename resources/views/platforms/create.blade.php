@@ -1,14 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2>game: create</h2>
+    <h2>platform: create</h2>
 
-    <form class="ui form" action="{{ route('games.store') }}" method="POST">
+    <form class="ui form" action="{{ route('platforms.store') }}" method="POST">
         {{ csrf_field() }}
 
         <div class="field">
             <label>
                 Name: <input name="name" type="text">
+            </label>
+        </div>
+
+        <div class="field">
+            <label>
+                Nickname: <input name="nickname" type="text">
             </label>
         </div>
 
@@ -32,11 +38,11 @@
 
         <div class="field">
             <label>
-                Developer:
-                <select name="developer_id">
-                    @foreach($developers as $developer)
-                        <option value="{{ $developer->id }}">
-                            {{ $developer->nickname or $developer->name }}
+                Organization:
+                <select name="organization_id">
+                    @foreach($organizations as $organization)
+                        <option value="{{ $organization->id }}">
+                            {{ $organization->nickname or $organization->name }}
                         </option>
                     @endforeach
                 </select>

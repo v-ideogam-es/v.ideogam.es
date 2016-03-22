@@ -159,8 +159,10 @@ return [
         /*
          * Vendor Service Providers...
          */
-        //Barryvdh\Debugbar\ServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Laravolt\Avatar\ServiceProvider::class,
 
     ],
 
@@ -211,6 +213,7 @@ return [
         /*
          * Vendor Aliases...
          */
+        'Avatar'    => Laravolt\Avatar\Facade::class,
         'Debugbar'  => Barryvdh\Debugbar\Facade::class,
 
     ],
