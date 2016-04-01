@@ -19,3 +19,10 @@ Resources
  - [ ] show
  - [x] store
  - [ ] update
+- [ ] releases
+ - [ ] create
+ - [ ] edit
+ - [ ] index
+ - [ ] show
+ - [ ] store
+ - [ ] update
