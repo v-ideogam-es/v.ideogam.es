@@ -3,7 +3,7 @@
 @section('content')
     <h2>platform: create</h2>
 
-    <form class="ui form" action="{{ route('platforms.store') }}" method="POST">
+    <form class="ui form" action="{{ route('platform.store') }}" method="POST">
         {{ csrf_field() }}
 
         <div class="field">
