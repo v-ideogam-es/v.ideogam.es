@@ -95,7 +95,12 @@ class GameController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $game               = Game::findOrFail($id);
+        $game->name         = $request->name;
+        $game->description  = $request->description;
+        $game->developer_id = $request->developer_id;
+        $game->updated_at   = Carbon::now();
+        $game->save();
     }
 
     /**

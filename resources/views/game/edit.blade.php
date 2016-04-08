@@ -6,6 +6,8 @@
     <form class="ui form" action="{{ route('game.update', ['id' => $game->id]) }}" method="POST">
         {{ csrf_field() }}
 
+        {{ method_field('PUT') }}
+
         <div class="field">
             <label>
                 Name: <input name="name" type="text" value="{{ $game->name }}">
@@ -47,6 +49,6 @@
             </label>
         </div>
 
-        <button class="ui primary button" type="submit">Save</button>
+        <button class="ui primary button" type="submit">Update</button>
     </form>
 @endsection
