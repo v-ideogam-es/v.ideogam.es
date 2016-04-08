@@ -5,6 +5,13 @@ A work in progress videogame collection web app.
 
 Resources
 ---------
+- [ ] devices
+  - [ ] create
+  - [ ] edit
+  - [x] index
+  - [ ] show
+  - [ ] store
+  - [ ] update
 - [ ] games
   - [x] create
   - [ ] edit
@@ -12,6 +19,12 @@ Resources
   - [ ] show
   - [x] store
   - [ ] update
+- [ ] organizations
+  - [ ] create
+  - [ ] edit
+  - [x] index
+  - [ ] show
+  - [ ] store
 - [ ] platforms
   - [x] create
   - [ ] edit

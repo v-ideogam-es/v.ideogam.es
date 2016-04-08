@@ -80,7 +80,10 @@ class GameController extends Controller
      */
     public function edit($id)
     {
-        //
+        $developers = Organization::developer()->orderBy('name', 'asc')->get();
+        $game       = Game::findOrFail($id);
+
+        return view('games.edit', compact('developers', 'game'));
     }
 
     /**
