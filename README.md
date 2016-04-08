@@ -5,34 +5,34 @@ A work in progress videogame collection web app.
 
 Resources
 ---------
-- [ ] devices
+- [ ] __device__
   - [ ] create
   - [ ] edit
   - [x] index
   - [ ] show
   - [ ] store
   - [ ] update
-- [ ] games
+- [ ] __game__
   - [x] create
   - [ ] edit
   - [x] index
   - [ ] show
   - [x] store
   - [ ] update
-- [ ] organizations
+- [ ] __organization__
   - [ ] create
   - [ ] edit
   - [x] index
   - [ ] show
   - [ ] store
-- [ ] platforms
+- [ ] __platform__
   - [x] create
   - [ ] edit
   - [ ] index
   - [ ] show
   - [x] store
   - [ ] update
-- [ ] releases
+- [ ] __release__
   - [ ] create
   - [ ] edit
   - [ ] index
