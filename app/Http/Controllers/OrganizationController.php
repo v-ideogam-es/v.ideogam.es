@@ -19,7 +19,7 @@ class OrganizationController extends Controller
     {
         $organizations = Organization::all();
 
-        return view('organizations.index', compact('organizations'));
+        return view('organization.index', compact('organizations'));
     }
 
     /**

@@ -19,7 +19,7 @@ class PlatformController extends Controller
     {
         $platforms = Platform::all();
 
-        return view('platforms.index', compact('platforms'));
+        return view('platform.index', compact('platforms'));
     }
 
     /**
@@ -31,7 +31,7 @@ class PlatformController extends Controller
     {
         $organizations = Organization::all()->sortBy('name');
 
-        return view('platforms.create', compact('organizations'));
+        return view('platform.create', compact('organizations'));
     }
 
     /**

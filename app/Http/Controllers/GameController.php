@@ -29,7 +29,7 @@ class GameController extends Controller
     {
         $games = Game::all();
 
-        return view('games.index', compact('games'));
+        return view('game.index', compact('games'));
     }
 
     /**
@@ -41,7 +41,7 @@ class GameController extends Controller
     {
         $developers = Organization::developer()->orderBy('name', 'asc')->get();
 
-        return view('games.create', compact('developers'));
+        return view('game.create', compact('developers'));
     }
 
     /**
@@ -83,7 +83,7 @@ class GameController extends Controller
         $developers = Organization::developer()->orderBy('name', 'asc')->get();
         $game       = Game::findOrFail($id);
 
-        return view('games.edit', compact('developers', 'game'));
+        return view('game.edit', compact('developers', 'game'));
     }
 
     /**
