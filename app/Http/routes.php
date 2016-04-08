@@ -14,9 +14,25 @@
 use League\CommonMark\CommonMarkConverter;
 
 Route::get('/', function () {
-    $markdown = file_get_contents(base_path('README.md'));
+    $markdown        = file_get_contents(base_path('README.md'));
+    $routes          = [];
+    $routeCollection = Route::getRoutes();
 
-    return (new CommonMarkConverter())->convertToHtml($markdown);
+    foreach ($routeCollection->getRoutes() as $route) {
+        // If you access a route property directly (e.g. $route->uri) you will trigger a "Route is not bound." error.
+        if (starts_with($route->uri(), '_')) {
+            continue;
+        }
+
+        #$routes[] = $route->getName();
+        #$routes[] = $route->uri();
+        $routes[] = $route;
+    }
+
+    #$routes = array_unique($routes);
+
+    return dump($routes);
+    #return (new CommonMarkConverter())->convertToHtml($markdown);
 });
 
 /*
@@ -31,9 +47,9 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    Route::resource('devices', 'DeviceController');
-    Route::resource('games', 'GameController');
-    Route::resource('organizations', 'OrganizationController');
-    Route::resource('platforms', 'PlatformController');
-    Route::resource('releases', 'ReleaseController');
+    Route::resource('device', 'DeviceController');
+    Route::resource('game', 'GameController');
+    Route::resource('organization', 'OrganizationController');
+    Route::resource('platform', 'PlatformController');
+    Route::resource('release', 'ReleaseController');
 });
