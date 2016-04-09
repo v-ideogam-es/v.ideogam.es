@@ -69,7 +69,7 @@ class GameController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('game.show')->withGame(Game::findOrFail($id));
     }
 
     /**
