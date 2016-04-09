@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Release;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -15,7 +16,7 @@ class ReleaseController extends Controller
      */
     public function index()
     {
-        //
+        return view('release.index')->withReleases(Release::all());
     }
 
     /**

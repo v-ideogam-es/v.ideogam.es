@@ -24,8 +24,25 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\App\Release whereReleaseDate($value)
  * @property integer $rating_id
  * @method static \Illuminate\Database\Query\Builder|\App\Release whereRatingId($value)
+ * @property integer $publisher_id
+ * @property-read \App\Game $game
+ * @method static \Illuminate\Database\Query\Builder|\App\Release wherePublisherId($value)
  */
 class Release extends Model
 {
-    //
+    /**
+     * @return Game
+     */
+    public function game()
+    {
+        return $this->hasOne('App\Game', 'id', 'game_id');
+    }
+
+    /**
+     * @return Publisher
+     */
+    public function publisher()
+    {
+        return $this->hasOne('App\Organization', 'id', 'publisher_id');
+    }
 }
