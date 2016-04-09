@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    <h1>game: index</h1>
+
     @if (session('success'))
         <div class="ui success message">
             <i class="close icon" role="presentation"></i>

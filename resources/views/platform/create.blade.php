@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2>platform: create</h2>
+    <h1>platform: create</h1>
 
     <form class="ui form" action="{{ route('platform.store') }}" method="POST">
         {{ csrf_field() }}

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2>game: create</h2>
+    <h1>game: create</h1>
 
     <form class="ui form" action="{{ route('game.store') }}" method="POST">
         {{ csrf_field() }}
