@@ -11,7 +11,7 @@
                 {{ $game->developer->nickname or $game->developer->name }}
             </a>
             &nbsp;
-            <i class="icon code" role="presentation"></i>
+            <i class="code icon" role="presentation"></i>
         </span>
      </div>
  </article>
