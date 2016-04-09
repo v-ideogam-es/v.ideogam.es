@@ -26,8 +26,10 @@ trait Seedable
         $seeds = self::data();
 
         foreach ($seeds as $seed) {
-            $properties = [];
-            $properties['created_at'] = Carbon::now();
+            $now                      = Carbon::now();
+            $properties               = [];
+            $properties['created_at'] = $now;
+            $properties['updated_at'] = $now;
 
             foreach ($seed as $property => $value) {
                 $properties[$property] = $value;

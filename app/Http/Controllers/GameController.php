@@ -18,7 +18,8 @@ class GameController extends Controller
      *
      * @var array
      */
-    protected $fillable = ['description', 'name', 'photo', 'url', 'publisher_id', 'created_at', 'updated_at'];
+    protected $fillable = ['name', 'description', 'photo', 'url', 'developer_id', 'created_at', 'updated_at'];
+
 
     /**
      * Display a listing of the resource.
@@ -56,9 +57,14 @@ class GameController extends Controller
         $game->name         = $request->name;
         $game->description  = $request->description;
         $game->developer_id = $request->developer_id;
-        $game->created_at   = Carbon::now();
-        $game->updated_at   = null;
         $game->save();
+
+        //Game::create($request->except('_token'));
+        //(new Game)->fill($request->all())->save();
+        //Game::create($request->only('name', 'description', 'photo', 'url', 'developer_id'));
+
+        return redirect()->route('game.index')
+                         ->with('success', sprintf('Successfully created "%s".', $game->name));
     }
 
     /**
@@ -100,7 +106,7 @@ class GameController extends Controller
         $game->description  = $request->description;
         $game->developer_id = $request->developer_id;
         $game->updated_at   = Carbon::now();
-        $game->save();
+        $game->update();
 
         # Flash::success(sprintf('Successfully updated "%s".', $game->name));
 
