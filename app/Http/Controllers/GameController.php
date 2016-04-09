@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Developer;
+use App\Game;
+use App\Http\Controllers\Controller;
+use App\Http\Requests;
 use App\Organization;
 use Carbon\Carbon;
+use Flash;
 use Illuminate\Http\Request;
-
-use App\Game;
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use Redirect;
 
 class GameController extends Controller
 {
@@ -101,6 +101,11 @@ class GameController extends Controller
         $game->developer_id = $request->developer_id;
         $game->updated_at   = Carbon::now();
         $game->save();
+
+        # Flash::success(sprintf('Successfully updated "%s".', $game->name));
+
+        return redirect()->route('game.index')
+                         ->with('success', sprintf('Successfully updated "%s".', $game->name));
     }
 
     /**

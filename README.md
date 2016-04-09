@@ -14,11 +14,11 @@ Resources
   - [ ] update
 - [ ] __game__
   - [x] create
-  - [ ] edit
+  - [x] edit
   - [x] index
   - [ ] show
   - [x] store
-  - [ ] update
+  - [x] update
 - [ ] __organization__
   - [ ] create
   - [ ] edit

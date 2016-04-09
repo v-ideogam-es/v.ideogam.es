@@ -14,5 +14,8 @@
     </head>
     <body>
         @yield('content')
+        <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.js"></script>
+        @yield('scripts')
     </body>
 </html>
