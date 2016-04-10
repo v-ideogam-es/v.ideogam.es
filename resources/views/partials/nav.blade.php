@@ -1,7 +1,10 @@
 <nav class="ui menu">
     <div class="header item">v.ideogam.es</div>
-    <a class="@if (request()->path() === 'device') active @endif item" href="{{ route('device.index') }}">Devices</a>
-    <a class="item" href="{{ route('game.index') }}">Games</a>
-    <a class="item" href="{{ route('organization.index') }}">Organizations</a>
-    <a class="item" href="{{ route('release.index') }}">Releases</a>
+    @foreach (['device', 'game', 'organization', 'release'] as $resource)
+        @if (request()->path() === $resource)
+            <a class="active item" href="{{ route($resource . '.index') }}">{{ ucfirst(str_plural($resource)) }}</a>
+        @else
+            <a class="item" href="{{ route($resource . '.index') }}">{{ ucfirst(str_plural($resource)) }}</a>
+        @endif
+    @endforeach
 </nav>
