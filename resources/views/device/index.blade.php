@@ -1,7 +1,26 @@
-<ul>
-@forelse ($devices as $device)
-    <li>{{ $device->organization()->nickname or $device->organization()->name }} - {{ $device->nickname or $device->name }}
-@empty
-    <li>No Devices
-@endforelse
-</ul>
+@extends('layouts.app')
+
+@section('content')
+    <h1>device: index</h1>
+
+    @if (session('success'))
+        <div class="ui success message">
+            <i class="close icon" role="presentation"></i>
+            <span class="header">{{ session('success') }}</span>
+        </div>
+    @endif
+
+    <div class="ui cards">
+        @each ('partials.device', $devices, 'device')
+    </div>
+@endsection
+
+@section('scripts')
+    @if (session('success'))
+        <script>
+            $('.success .close').on('click', function () {
+                $(this).closest('.message').transition('fade');
+            });
+        </script>
+    @endif
+@endsection

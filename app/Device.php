@@ -36,6 +36,6 @@ class Device extends Model
      */
     public function organization()
     {
-        return $this->hasOne('App\Organization', 'id', 'organization_id')->first();
+        return $this->hasOne('App\Organization', 'id', 'organization_id');
     }
 }
