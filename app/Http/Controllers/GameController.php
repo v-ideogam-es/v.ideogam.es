@@ -14,23 +14,13 @@ use Redirect;
 class GameController extends Controller
 {
     /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = ['name', 'description', 'photo', 'url', 'developer_id', 'created_at', 'updated_at'];
-
-
-    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $games = Game::all();
-
-        return view('game.index', compact('games'));
+        return view('game.index')->withGames(Game::all());
     }
 
     /**
@@ -53,15 +43,11 @@ class GameController extends Controller
      */
     public function store(Request $request)
     {
-        $game               = new Game;
-        $game->name         = $request->name;
-        $game->description  = $request->description;
-        $game->developer_id = $request->developer_id;
-        $game->save();
-
         //Game::create($request->except('_token'));
         //(new Game)->fill($request->all())->save();
         //Game::create($request->only('name', 'description', 'photo', 'url', 'developer_id'));
+
+        $game = Game::create($request->all());
 
         return redirect()->route('game.index')
                          ->with('success', sprintf('Successfully created "%s".', $game->name));

@@ -18,7 +18,7 @@
 @section('scripts')
     @if (session('success'))
         <script>
-            $('.success .close').on('click', function() {
+            $('.success .close').on('click', function () {
                 $(this).closest('.message').transition('fade');
             });
         </script>

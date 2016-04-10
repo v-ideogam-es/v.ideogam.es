@@ -33,6 +33,13 @@ use Illuminate\Database\Eloquent\Model;
 class Game extends Model
 {
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['name', 'description', 'photo', 'url', 'developer_id', 'created_at', 'updated_at'];
+    
+    /**
      * The "booting" method of the model.
      *
      * @return void
