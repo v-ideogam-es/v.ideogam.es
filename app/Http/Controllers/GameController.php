@@ -91,7 +91,6 @@ class GameController extends Controller
         $game->name         = $request->name;
         $game->description  = $request->description;
         $game->developer_id = $request->developer_id;
-        $game->updated_at   = Carbon::now();
         $game->update();
 
         # Flash::success(sprintf('Successfully updated "%s".', $game->name));
