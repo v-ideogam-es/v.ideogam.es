@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>
+        @include('partials.nav')
         @yield('content')
         <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
         <script src="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.js"></script>
