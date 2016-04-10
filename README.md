@@ -35,7 +35,7 @@ Resources
 - [ ] __release__
   - [ ] create
   - [ ] edit
-  - [ ] index
+  - [x] index
   - [ ] show
   - [ ] store
   - [ ] update

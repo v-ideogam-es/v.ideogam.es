@@ -1,6 +1,8 @@
-<article class="ui card">
-    <div class="content h-product">
-        <h1 class="header p-name"><a href="{{ route('release.show', ['id' => $release->id]) }}">{{ $release->game->name }}</a></h1>
+<article class="ui card h-product">
+    <div class="content">
+        <h1 class="header p-name">
+            <a href="{{ route('release.show', ['id' => $release->id]) }}">{{ $release->game->name }}</a>
+        </h1>
         @if ($release->game->description)
             <p class="p-description">{{ $release->game->description }}</p>
         @endif
