@@ -91,8 +91,6 @@ class GameController extends Controller
         
         $game->update($request->all());
 
-        # Flash::success(sprintf('Successfully updated "%s".', $game->name));
-
         return redirect()->route('game.index')
                          ->with('success', sprintf('Successfully updated "%s".', $game->name));
     }

@@ -162,7 +162,6 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
-        Laracasts\Flash\FlashServiceProvider::class,
         Laravolt\Avatar\ServiceProvider::class,
 
     ],
@@ -215,8 +214,7 @@ return [
          * Vendor Aliases...
          */
         'Avatar'    => Laravolt\Avatar\Facade::class,
-        'Debugbar'  => Barryvdh\Debugbar\Facade::class,
-        'Flash'     => Laracasts\Flash\Flash::class
+        'Debugbar'  => Barryvdh\Debugbar\Facade::class
 
     ],
 
