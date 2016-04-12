@@ -87,11 +87,9 @@ class GameController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $game               = Game::findOrFail($id);
-        $game->name         = $request->name;
-        $game->description  = $request->description;
-        $game->developer_id = $request->developer_id;
-        $game->update();
+        $game = Game::findOrFail($id);
+        
+        $game->update($request->all());
 
         # Flash::success(sprintf('Successfully updated "%s".', $game->name));
 
