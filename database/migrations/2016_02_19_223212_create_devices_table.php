@@ -17,8 +17,10 @@ class CreateDevicesTable extends Migration
             $table->string('name')->index();
             $table->string('nickname')->nullable();
             $table->text('description')->nullable();
+            $table->string('photo')->nullable();
             $table->decimal('price', 6, 2)->nullable();
             $table->string('upc_a', 12)->nullable();
+            $table->string('url')->nullable();
             $table->integer('organization_id')->unsigned();
             $table->foreign('organization_id')->references('id')->on('organizations');
             $table->integer('platform_id')->unsigned();

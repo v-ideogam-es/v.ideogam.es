@@ -32,6 +32,13 @@ use Illuminate\Database\Eloquent\Model;
 class Device extends Model
 {
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['name', 'nickname', 'description', 'photo', 'price', 'upc_a', 'url', 'organization_id', 'platform_id'];
+
+    /**
      * @return Organization
      */
     public function organization()
