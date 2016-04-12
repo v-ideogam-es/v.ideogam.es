@@ -6,7 +6,7 @@ A work in progress videogame collection web app.
 Resources
 ---------
 - [ ] __device__
-  - [ ] create
+  - [x] create
   - [ ] destroy
   - [ ] edit
   - [x] index

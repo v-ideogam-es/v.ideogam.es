@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Organization;
+use App\Platform;
 use Illuminate\Http\Request;
 
 use App\Device;
@@ -29,7 +31,10 @@ class DeviceController extends Controller
      */
     public function create()
     {
-        //
+        $organizations = Organization::all();
+        $platforms     = Platform::all();
+        
+        return view('device.create', compact('organizations', 'platforms'));
     }
 
     /**
