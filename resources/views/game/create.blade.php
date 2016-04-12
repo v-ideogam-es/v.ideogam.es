@@ -34,11 +34,7 @@
             <label>
                 Developer:
                 <select name="developer_id">
-                    @foreach($developers as $developer)
-                        <option value="{{ $developer->id }}">
-                            {{ $developer->nickname or $developer->name }}
-                        </option>
-                    @endforeach
+                    @each('partials.options.developer', $developers, 'developer')
                 </select>
             </label>
         </div>
