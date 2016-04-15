@@ -8,7 +8,7 @@ Resources
 - [ ] __device__
   - [x] create
   - [ ] destroy
-  - [ ] edit
+  - [x] edit
   - [x] index
   - [x] show
   - [ ] store

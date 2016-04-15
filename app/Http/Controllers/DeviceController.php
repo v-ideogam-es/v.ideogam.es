@@ -67,7 +67,10 @@ class DeviceController extends Controller
      */
     public function edit($id)
     {
-        //
+        $device        = Device::findOrFail($id);
+        $organizations = Organization::all();
+
+        return view('device.edit', compact('device', 'organizations'));
     }
 
     /**
