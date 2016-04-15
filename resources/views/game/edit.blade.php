@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>game: create</h1>
+    <h1>game: edit</h1>
 
     <form class="ui form" action="{{ route('game.update', ['id' => $game->id]) }}" method="POST">
         {{ csrf_field() }}
