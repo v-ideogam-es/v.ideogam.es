@@ -11,7 +11,7 @@ Resources
   - [x] edit
   - [x] index
   - [x] show
-  - [ ] store
+  - [x] store
   - [ ] update
 - [ ] __game__
   - [x] create
@@ -44,3 +44,8 @@ Resources
   - [ ] show
   - [ ] store
   - [ ] update
+  
+  
+License
+-------
+The MIT License (Expat). See the [license file](LICENSE) for details.

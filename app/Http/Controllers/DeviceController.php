@@ -45,7 +45,10 @@ class DeviceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $device = Device::create($request->all());
+
+        return redirect()->route('device.index')
+                         ->with('success', sprintf('Successfully created "%s".', $device->name));
     }
 
     /**

@@ -45,4 +45,64 @@ class Device extends Model
     {
         return $this->hasOne('App\Organization', 'id', 'organization_id');
     }
+
+    /**
+     * Mutator for the "nickname" attribute.
+     *
+     * @param string $value
+     */
+    public function setNicknameAttribute($value)
+    {
+        $this->attributes['nickname'] =  $value ?: null;
+    }
+
+    /**
+     * Mutator for the "description" attribute.
+     *
+     * @param string $value
+     */
+    public function setDescriptionAttribute($value)
+    {
+        $this->attributes['description'] =  $value ?: null;
+    }
+
+    /**
+     * Mutator for the "photo" attribute.
+     *
+     * @param string $value
+     */
+    public function setPhotoAttribute($value)
+    {
+        $this->attributes['photo'] =  $value ?: null;
+    }
+
+    /**
+     * Mutator for the "price" attribute.
+     *
+     * @param string $value
+     */
+    public function setPriceAttribute($value)
+    {
+        $this->attributes['price'] =  $value ?: null;
+    }
+
+    /**
+     * Mutator for the "upc_a" attribute.
+     *
+     * @param string $value
+     */
+    public function setUpcAAttribute($value)
+    {
+        $this->attributes['upc_a'] =  $value ?: null;
+    }
+
+    /**
+     * Mutator for the "url" attribute.
+     *
+     * @param string $value
+     */
+    public function setUrlAttribute($value)
+    {
+        $this->attributes['url'] =  $value ?: null;
+    }
 }
