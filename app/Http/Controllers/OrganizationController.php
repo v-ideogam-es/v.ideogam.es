@@ -29,7 +29,7 @@ class OrganizationController extends Controller
      */
     public function create()
     {
-        //
+        return view('organization.create');
     }
 
     /**

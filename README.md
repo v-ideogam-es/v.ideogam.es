@@ -22,7 +22,7 @@ Resources
   - [x] store
   - [x] update
 - [ ] __organization__
-  - [ ] create
+  - [x] create
   - [ ] destroy
   - [ ] edit
   - [x] index
