@@ -47,4 +47,24 @@ class Organization extends Model
 
         $query->whereIn('id', $developerIds);
     }
+
+    /**
+     * Mutator for the "nickname" attribute.
+     *
+     * @param string $value
+     */
+    public function setNicknameAttribute($value)
+    {
+        $this->attributes['nickname'] =  $value ?: null;
+    }
+
+    /**
+     * Mutator for the "url" attribute.
+     *
+     * @param string $value
+     */
+    public function setUrlAttribute($value)
+    {
+        $this->attributes['url'] =  $value ?: null;
+    }
 }
