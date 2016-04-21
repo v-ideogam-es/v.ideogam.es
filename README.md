@@ -12,7 +12,7 @@ Resources
   - [x] index
   - [x] show
   - [x] store
-  - [ ] update
+  - [x] update
 - [ ] __game__
   - [x] create
   - [ ] destroy

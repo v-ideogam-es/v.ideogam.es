@@ -85,7 +85,12 @@ class DeviceController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $device = Device::findOrFail($id);
+
+        $device->update($request->all());
+
+        return redirect()->route('device.index')
+                         ->with('success', sprintf('Successfully updated "%s".', $device->name));
     }
 
     /**
