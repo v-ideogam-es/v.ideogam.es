@@ -26,6 +26,13 @@ use Illuminate\Database\Eloquent\Model;
 class Organization extends Model
 {
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['name', 'nickname', 'url'];
+
+    /**
      * Scope a query to only include developers.
      *
      * @param  \Illuminate\Database\Eloquent\Builder $query

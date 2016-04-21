@@ -27,7 +27,7 @@ Resources
   - [ ] edit
   - [x] index
   - [ ] show
-  - [ ] store
+  - [x] store
 - [ ] __platform__
   - [x] create
   - [ ] destroy

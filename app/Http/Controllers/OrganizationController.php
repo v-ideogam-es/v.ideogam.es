@@ -40,7 +40,10 @@ class OrganizationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $organization = Organization::create($request->all());
+
+        return redirect()->route('organization.index')
+                         ->with('success', sprintf('Successfully created "%s".', $organization->name));
     }
 
     /**
