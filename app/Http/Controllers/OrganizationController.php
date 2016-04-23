@@ -77,7 +77,12 @@ class OrganizationController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $organization = Organization::findOrFail($id);
+
+        $organization->update($request->all());
+
+        return redirect()->route('organization.index')
+                         ->with('success', sprintf('Successfully updated "%s".', $organization->name));
     }
 
     /**
