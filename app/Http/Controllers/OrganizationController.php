@@ -54,7 +54,7 @@ class OrganizationController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('organization.show')->withOrganization(Organization::findOrFail($id));
     }
 
     /**

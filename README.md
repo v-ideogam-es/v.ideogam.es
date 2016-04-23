@@ -26,7 +26,7 @@ Resources
   - [ ] destroy
   - [ ] edit
   - [x] index
-  - [ ] show
+  - [x] show
   - [x] store
 - [ ] __platform__
   - [x] create
@@ -44,8 +44,7 @@ Resources
   - [ ] show
   - [ ] store
   - [ ] update
-  
-  
+   
 License
 -------
 The MIT License (Expat). See the [license file](LICENSE) for details.
