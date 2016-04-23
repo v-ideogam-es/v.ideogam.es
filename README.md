@@ -24,10 +24,11 @@ Resources
 - [ ] __organization__
   - [x] create
   - [ ] destroy
-  - [ ] edit
+  - [x] edit
   - [x] index
   - [x] show
   - [x] store
+  - [ ] update
 - [ ] __platform__
   - [x] create
   - [ ] destroy
