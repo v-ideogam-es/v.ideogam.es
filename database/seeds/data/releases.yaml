@@ -2,4 +2,17 @@
 - game_id:      1 # Super Mario Bros.
   platform_id:  2 # NES
   publisher_id: 1 # Nintendo
-  release_date: 19851018 # Largely debated; but this is Nintendo's official stated date.
+  release_date: 1985
+  # country_name: USA
+
+- game_id:      2 # Super Mario Bros. 2
+  platform_id:  2 # NES
+  publisher_id: 1 # Nintendo
+  release_date: 19881009
+  # country_name: USA
+
+- game_id:      3 # Super Mario Bros. 3
+  platform_id:  2 # NES
+  publisher_id: 1 # Nintendo
+  release_date: 19900209
+  # country_name: USA
